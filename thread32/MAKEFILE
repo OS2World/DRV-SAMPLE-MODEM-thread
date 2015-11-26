@@ -1,0 +1,29 @@
+# IBM Developer's Workframe/2 Make File Creation run at 00:14:39 on 10/21/92
+
+# Make File Creation run in directory:
+#   E:\OS2THRED\32_BIT;
+
+.SUFFIXES:
+
+.SUFFIXES: .c .i
+
+testcom.exe:  \
+  TESTCOM.OBJ \
+  MAKEFILE
+   @REM @<<TESTCOM.@0
+     /CO /M:FULL /NOL /PM:VIO +
+     TESTCOM.OBJ
+     testcom.exe
+     
+     
+     ;
+<<
+   LINK386.EXE @TESTCOM.@0
+
+{.}.c.obj:
+   ICC.EXE /Sp1 /Ss /Q /Kb /Ti /Gm /C .\$*.c
+
+{.}.i.obj:
+   ICC.EXE /Sp1 /Ss /Q /Kb /Ti /Gm /C .\$*.i
+
+!include MAKEFILE.DEP

@@ -1,0 +1,21 @@
+# IBM Developer's Workframe/2 Make File Creation run at 00:14:39 on 10/21/92
+
+# Make File Creation run in directory:
+#   E:\OS2THRED\32_BIT;
+
+# Assumed INCLUDE environment variable path:
+#   F:\TOOLKT20\C\OS2H;
+#   F:\TOOLKT20\MASM\OS2INC;
+#   F:\IBMC\INCLUDE;
+#   C:\CMLIB;
+#   C:\IBMCOM\INCLUDE;
+#   F:\TOOLKT20\ASM\OS2INC;
+
+
+TESTCOM.OBJ:  TESTCOM.C  \
+#  {$(INCLUDE);}os2.h  \
+#  {$(INCLUDE);}stdlib.h  \
+#  {$(INCLUDE);}stdio.h  \
+#  {$(INCLUDE);}malloc.h  \
+#  {$(INCLUDE);}string.h  \
+   MAKEFILE
